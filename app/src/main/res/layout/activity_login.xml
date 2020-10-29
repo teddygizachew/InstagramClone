@@ -1,37 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_margin="16dp"
-    android:layout_gravity="center"
-    tools:context=".LoginActivity">
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/instaLogo"
+        android:layout_width="500dp"
+        android:layout_height="71dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_instagram_logo2" />
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_below="@+id/instaLogo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/etshape"
         android:ems="10"
-        android:hint="username"/>
+        android:hint="@string/username"
+        android:padding="10dp"
+        android:textColorHighlight="#1DA1F2" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/etUsername"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/etshape"
         android:ems="10"
-        android:layout_weight="1"
-        android:hint="password"
-        android:inputType="textPassword"/>
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHighlight="#1DA1F2" />
+
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Login" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="342dp"
+        android:layout_marginEnd="20dp"
+        android:enabled="false"
+        android:backgroundTint="@color/login_background_color"
+        android:text="@string/log_in" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="395dp" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="619dp"
+        android:text="@string/don_t_have_an_account" />
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvText"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="589dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/tvText"
+        android:textColor="#147EFB"
+        android:text="Sign Up" />
+
+</RelativeLayout>
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="vertical"-->
+<!--android:layout_margin="16dp"-->
+<!--android:layout_gravity="center"-->
+<!--tools:context=".LoginActivity">-->
+
+<!--<EditText-->
+<!--    android:id="@+id/etUsername"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_weight="1"-->
+<!--    android:ems="10"-->
+<!--    android:hint="username"/>-->
+
+<!--<EditText-->
+<!--    android:id="@+id/etPassword"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:ems="10"-->
+<!--    android:layout_weight="1"-->
+<!--    android:hint="password"-->
+<!--    android:inputType="textPassword"/>-->
+
+<!--<Button-->
+<!--    android:id="@+id/btnLogin"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_weight="1"-->
+<!--    android:text="Login" />-->
+
+<!--<Button-->
+<!--    android:id="@+id/btnSignup"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Sign up" />-->
 
 
-</LinearLayout>
+<!--</LinearLayout>-->
