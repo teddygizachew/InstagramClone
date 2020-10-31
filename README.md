@@ -28,7 +28,10 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] User will only be able to login once the username and password is entered, otherwise the login button will be disabled
+- [x] User will be directed to a different signup activity to create an account
+- [x] After the user submits a new post, show an indeterminate progress bar while the post is being uploaded to Parse.
+- [x] After the user logs in, show an indeterminate progress bar while the user is being logged in.
 
 ## Video Walkthrough
 
@@ -38,6 +41,7 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
+# Unit 5
 # Part 1
 
 Time spent: **4** hours spent in total
